@@ -7,10 +7,10 @@ node {
     
     stage('DL') {
       checkout scm
-      sh 'npm install'
+      call npm install
     }
 
     stage('Test') {
-      sh 'npm test'
+      call npm test
     }
 }
